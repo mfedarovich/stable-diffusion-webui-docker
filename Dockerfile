@@ -40,16 +40,16 @@ USER $APP_UID:$APP_GID
 
 # Hint: mount this volume to avoid downloading stuff every time
 # See docker-compose.yml for an example
-VOLUME /home/app/project
-WORKDIR /home/app/project
+VOLUME /home/apps/stable-diffusion
+WORKDIR /home/apps/stable-diffusion
 
 # Set the install location of stable-diffusion-webui
 # See https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/webui-user.sh
-ENV install_dir /home/app/project
+ENV install_dir /home/apps/stable-diffusion
 
 # Set the cache location for HuggingFace transformers downloads
 # See https://huggingface.co/docs/transformers/installation#cache-setup
-ENV HF_HOME /home/app/project/huggingface
+ENV HF_HOME /home/apps/stable-diffusion/huggingface
 
 # Set the branch you want to clone
 ENV WEBUI_BRANCH=v1.3.0

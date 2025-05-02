@@ -13,4 +13,4 @@ services:
       - "7860:7860"
     tty: true
     volumes:
-      - "./project:/home/app/project:rw"
+      - "./project:/home/apps/stable-diffusion:rw"
