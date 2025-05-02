@@ -42,6 +42,8 @@ USER $APP_UID:$APP_GID
 # See docker-compose.yml for an example
 VOLUME /home/apps/stable-diffusion
 WORKDIR /home/apps/stable-diffusion
+VOLUME /home/apps/stable-diffusion
+WORKDIR /home/apps/stable-diffusion
 
 # Set the install location of stable-diffusion-webui
 # See https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/webui-user.sh
