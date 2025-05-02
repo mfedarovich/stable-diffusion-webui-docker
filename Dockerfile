@@ -45,11 +45,11 @@ WORKDIR /home/apps/stable-diffusion
 
 # Set the install location of stable-diffusion-webui
 # See https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/webui-user.sh
-ENV install_dir /home/apps/stable-diffusion
+ENV install_dir=/home/apps/stable-diffusion
 
 # Set the cache location for HuggingFace transformers downloads
 # See https://huggingface.co/docs/transformers/installation#cache-setup
-ENV HF_HOME /home/apps/stable-diffusion/huggingface
+ENV HF_HOME=/home/apps/stable-diffusion/huggingface
 
 # Set the branch you want to clone
 ENV WEBUI_BRANCH=v1.3.0
